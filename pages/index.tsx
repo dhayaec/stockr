@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MetaHeader title={item.name} />
-      <div className='text-center'>
+      <div className='px-2 text-center'>
         <Target name='Target / Stop Loss' />
         <Gain name='Gain / Loss' />
         <NoLossBuy name="Day's Range" />

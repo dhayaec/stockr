@@ -14,7 +14,8 @@
     "next-env.d.ts": true,
     ".husky": true,
     "*.tsbuildinfo": true,
-    "*.lock": true
+    "*.lock": true,
+    "**/coverage": true
   },
   "emmet.includeLanguages": {
     "postcss": "css"
