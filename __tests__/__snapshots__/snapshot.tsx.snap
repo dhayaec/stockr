@@ -2,11 +2,9 @@
 
 exports[`renders homepage unchanged 1`] = `
 <div>
-  <div
-    class="container"
-  >
+  <div>
     <main
-      class="main"
+      class="container"
     >
       <h1
         class="title"
