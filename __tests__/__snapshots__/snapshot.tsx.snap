@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main
+      class="main"
+    >
+      <h1
+        class="title"
+      >
+        Welcome to 
+        <a
+          href="https://nextjs.org"
+        >
+          Next.js!
+        </a>
+      </h1>
+      <h1
+        class="title"
+      >
+        The Result of 1+2 is 
+        <span>
+          3
+        </span>
+      </h1>
+    </main>
+    <footer
+      class="fixed bottom-0"
+    >
+      <div
+        class="flex justify-center "
+      >
+        <p
+          class="text-center text-xs text-gray-400"
+        >
+          © 
+          2022
+           Stockr App
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
