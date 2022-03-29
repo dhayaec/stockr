@@ -4,7 +4,7 @@ module.exports = {
 
   // Lint then format TypeScript and JavaScript files
   '**/*.(ts|tsx|js)': (filenames) => [
-    `yarn test:ci`,
+    `yarn test:ci -o`,
     `yarn eslint --fix ${filenames.join(' ')}`,
     `yarn prettier --write ${filenames.join(' ')}`,
   ],
