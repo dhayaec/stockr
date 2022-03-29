@@ -7,6 +7,7 @@ module.exports = {
     `yarn test:ci -u`,
     `yarn eslint --fix ${filenames.join(' ')}`,
     `yarn prettier --write ${filenames.join(' ')}`,
+    `yarn test:ci`,
   ],
 
   // Format MarkDown and JSON

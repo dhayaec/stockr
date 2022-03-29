@@ -4,10 +4,10 @@ exports[`renders homepage unchanged 1`] = `
 <div>
   <div>
     <main
-      class="container"
+      class="container m-auto"
     >
       <h1
-        class="title"
+        class="text-red-500"
       >
         Welcome to 
         <a
@@ -17,7 +17,7 @@ exports[`renders homepage unchanged 1`] = `
         </a>
       </h1>
       <h1
-        class="title"
+        class="text-red-500"
       >
         The Result of 1+2 is 
         <span>
