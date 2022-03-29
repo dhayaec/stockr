@@ -9,6 +9,7 @@
     "lint": "next lint",
     "type-check": "tsc --pretty --noEmit",
     "test": "jest --watch",
+    "test:cover": "jest --coverage",
     "test:ci": "jest --ci"
   },
   "dependencies": {
