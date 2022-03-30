@@ -21,7 +21,7 @@ function NavBar() {
             </a>
           </Link>
         </div>
-        <div>
+        <div className='self-start md:self-center'>
           <ul className='inline-flex items-center'>
             {menuItems.map((i) => {
               return (
