@@ -14,6 +14,11 @@ export const menuItems: Array<MenuItemType> = [
   },
   {
     id: 2,
+    name: 'About us',
+    href: '/about',
+  },
+  {
+    id: 3,
     name: 'Target / Stop Loss',
     href: '/tsl',
   },

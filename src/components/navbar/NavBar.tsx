@@ -22,7 +22,7 @@ function NavBar() {
           </Link>
         </div>
         <div>
-          <ul className='inline-flex'>
+          <ul className='inline-flex items-center'>
             {menuItems.map((i) => {
               return (
                 <li key={i.id} className='text-black-500 hover:text-black-800'>
