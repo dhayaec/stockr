@@ -38,32 +38,32 @@ export default class Target extends Component<TargetProps, any> {
     const { price, sl, target, tp, sp } = this.state
 
     return (
-      <div className="my-2 text-center">
-        <div className="my-1">
+      <div className='my-2 text-center'>
+        <div className='my-1'>
           <h1>{name}</h1>
         </div>
-        <div className="flex text-center">
-          <div className="w-6/12">
+        <div className='flex text-center'>
+          <div className='w-6/12'>
             <input
               value={price || ''}
-              type="number"
-              name="price"
-              id="price"
+              type='number'
+              name='price'
+              id='price'
               onChange={this.onChange}
-              placeholder="Price"
-              className="w-full"
-              pattern="\d*"
+              placeholder='Price'
+              className='w-full'
+              pattern='\d*'
             />
           </div>
-          <div className="w-3/12">
+          <div className='w-3/12'>
             <select
               value={tp}
-              name="tp"
-              id="tp"
+              name='tp'
+              id='tp'
               onChange={this.onChange}
-              className="w-full"
+              className='w-full'
             >
-              <option value="">TP</option>
+              <option value=''>TP</option>
               {percentages.target.map((i) => (
                 <option key={i} value={i}>
                   {i}
@@ -71,15 +71,15 @@ export default class Target extends Component<TargetProps, any> {
               ))}
             </select>
           </div>
-          <div className="w-3/12">
+          <div className='w-3/12'>
             <select
               value={sp}
-              name="sp"
-              id="sp"
+              name='sp'
+              id='sp'
               onChange={this.onChange}
-              className="w-full"
+              className='w-full'
             >
-              <option value="">SP</option>
+              <option value=''>SP</option>
               {percentages.sl.map((i) => (
                 <option key={i} value={i}>
                   {i}
@@ -88,14 +88,14 @@ export default class Target extends Component<TargetProps, any> {
             </select>
           </div>
         </div>
-        <div className="flex text-center">
-          <div className="w-1/2 text-green-500">
+        <div className='flex text-center'>
+          <div className='w-1/2 text-green-500'>
             <p>Target</p>
-            <p className="text-xl">{target}</p>
+            <p className='text-xl'>{target}</p>
           </div>
-          <div className="w-1/2 text-red-500">
+          <div className='w-1/2 text-red-500'>
             <p>Stop Loss</p>
-            <p className="text-xl">{sl}</p>
+            <p className='text-xl'>{sl}</p>
           </div>
         </div>
       </div>

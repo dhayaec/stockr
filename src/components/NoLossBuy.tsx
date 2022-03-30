@@ -28,24 +28,24 @@ export default class NoLossBuy extends Component<
     const { name } = this.props
     const { range, result } = this.state
     return (
-      <div className="my-2 text-center">
-        <div className="my-1">
+      <div className='my-2 text-center'>
+        <div className='my-1'>
           <h1>{name}</h1>
         </div>
-        <div className="flex justify-center text-center">
-          <div className="w-1/2">
+        <div className='flex justify-center text-center'>
+          <div className='w-1/2'>
             <input
               value={range || ''}
-              type="number"
-              name="range"
-              id="range"
+              type='number'
+              name='range'
+              id='range'
               onChange={this.onChange}
-              placeholder="Range"
-              className="w-full"
-              pattern="\d*"
+              placeholder='Range'
+              className='w-full'
+              pattern='\d*'
             />
           </div>
-          <div className="flex w-1/2 items-center justify-center border-2 border-dashed border-gray-300">
+          <div className='flex w-1/2 items-center justify-center border-2 border-dashed border-gray-300'>
             <p>{result}</p>
           </div>
         </div>
