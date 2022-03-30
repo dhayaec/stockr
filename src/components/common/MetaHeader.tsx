@@ -9,16 +9,16 @@ export default function MetaHeader({ title = 'CMS BASE' }: MetaHeaderProps) {
   return (
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel='icon' href='/favicon.ico' />
       {/* link manifest.json  */}
-      <link rel="manifest" href="/manifest.json" />
+      <link rel='manifest' href='/manifest.json' />
       {/* this sets the color of url bar */}
-      <meta name="theme-color" content="#ffffff" />
+      <meta name='theme-color' content='#ffffff' />
       {/* this sets logo in Apple smatphones.  */}
-      <link rel="apple-touch-icon" href="/icon-192x192.png" />
+      <link rel='apple-touch-icon' href='/icon-192x192.png' />
       {/* this sets the color of url bar in Apple smatphones  */}
-      <meta name="apple-mobile-web-app-status-bar" content={theme} />
-      <meta name="viewport" content="user-scalable=no, width=device-width" />
+      <meta name='apple-mobile-web-app-status-bar' content={theme} />
+      <meta name='viewport' content='user-scalable=no, width=device-width' />
     </Head>
   )
 }

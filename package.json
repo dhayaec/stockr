@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "pretty": "yarn prettier --write '**/*.{ts,tsx}'",
     "type-check": "tsc --pretty --noEmit",
     "test": "jest --watch",
     "test:cover": "jest --coverage",
