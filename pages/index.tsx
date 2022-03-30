@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
 import MetaHeader from '../src/components/common/MetaHeader'
@@ -14,10 +13,6 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <Head>
-        <title>Stock App</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
       <MetaHeader title={item.name} />
       <div className='px-2 text-center'>
         <Target name='Target / Stop Loss' />

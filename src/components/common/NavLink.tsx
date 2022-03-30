@@ -11,7 +11,7 @@ export const NavLink = ({ href, children }: NavLinkProps) => {
 
   let className = children.props.className || ''
   if (router.pathname === href) {
-    className = `${className} underline text-blue-700 bg-blue-100`
+    className = `${className} text-black-700 bg-gray-200`
   }
 
   return (
