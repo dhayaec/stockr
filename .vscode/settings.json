@@ -39,5 +39,8 @@
     "tailwindcss",
     "tailwindui",
     "vercel"
-  ]
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  }
 }
