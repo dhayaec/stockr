@@ -26,7 +26,7 @@ function NavBar() {
           <ul className='inline-flex items-center'>
             {menuItems.map((i) => {
               return (
-                <li key={i.id} className='hover:text-black-800 text-red-500'>
+                <li key={i.id} className='text-black-500 hover:text-black-800'>
                   <NavLink href={i.href}>
                     <a className='cursor-pointer rounded-md py-2 px-4'>
                       {i.name}
