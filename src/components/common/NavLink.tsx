@@ -13,7 +13,7 @@ export const NavLink = ({ href, children }: NavLinkProps) => {
   if (router.pathname === href) {
     className = `${className} text-black-700 bg-gray-200`
   }
-
+  // close the app when on home page replace={href === '/'}
   return (
     <Link replace={href === '/'} href={href}>
       {React.cloneElement(children, { className })}
