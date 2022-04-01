@@ -27,7 +27,7 @@ function NavBar() {
             {menuItems.map((i) => {
               return (
                 <li key={i.id} className='text-black-500 hover:text-black-800'>
-                  <NavLink href={i.href} replace={i.href === '/'}>
+                  <NavLink href={i.href}>
                     <a className='cursor-pointer rounded-md py-2 px-4'>
                       {i.name}
                     </a>
