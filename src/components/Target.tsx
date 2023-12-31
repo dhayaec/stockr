@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { percentages } from '../constants/constants'
 
 interface TargetProps {
   name: string
@@ -56,36 +55,28 @@ export default class Target extends Component<TargetProps, any> {
             />
           </div>
           <div className='w-3/12'>
-            <select
-              value={tp}
+            <input
+              value={tp || ''}
+              type='number'
               name='tp'
               id='tp'
               onChange={this.onChange}
+              placeholder='Target Price'
               className='w-full'
-            >
-              <option value=''>TP</option>
-              {percentages.target.map((i) => (
-                <option key={i} value={i}>
-                  {i}
-                </option>
-              ))}
-            </select>
+              pattern='\d*'
+            />
           </div>
           <div className='w-3/12'>
-            <select
-              value={sp}
+            <input
+              value={sp || ''}
+              type='number'
               name='sp'
               id='sp'
               onChange={this.onChange}
+              placeholder='Stop Loss'
               className='w-full'
-            >
-              <option value=''>SP</option>
-              {percentages.sl.map((i) => (
-                <option key={i} value={i}>
-                  {i}
-                </option>
-              ))}
-            </select>
+              pattern='\d*'
+            />
           </div>
         </div>
         <div className='flex text-center'>
