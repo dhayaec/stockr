@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
-import React from 'react'
-import Accordion from '../src/components/accordian/Accordian'
 import MetaHeader from '../src/components/common/MetaHeader'
 import Gain from '../src/components/Gain'
 import NoLossBuy from '../src/components/NoLossBuy'
+import PossibleGain from '../src/components/PossibleGain/PossibleGain'
 import Target from '../src/components/Target'
 import { menuItems, MenuItemType } from '../src/constants/constants'
 
@@ -15,11 +14,11 @@ const Home: NextPage = () => {
   return (
     <div>
       <MetaHeader title={item.name} />
-      <Accordion />
       <div className='px-2 text-center'>
         <Target name='Target / Stop Loss' />
         <Gain name='Gain / Loss' />
         <NoLossBuy name="Day's Range" />
+        <PossibleGain name='Possible Gain' />
       </div>
     </div>
   )
