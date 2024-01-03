@@ -28,7 +28,7 @@ export default class NoLossBuy extends Component<
     const { name } = this.props
     const { range, result } = this.state
     return (
-      <div className='my-2 text-center'>
+      <div className='my-2 text-center' data-testid='no-loss-buy'>
         <div className='my-1'>
           <h1>{name}</h1>
         </div>
@@ -43,10 +43,11 @@ export default class NoLossBuy extends Component<
               placeholder='Range'
               className='w-full'
               pattern='\d*'
+              data-testid='range'
             />
           </div>
           <div className='flex w-1/2 items-center justify-center border-2 border-dashed border-gray-300'>
-            <p>{result}</p>
+            <p data-testid='result'>{result}</p>
           </div>
         </div>
       </div>

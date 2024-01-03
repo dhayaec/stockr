@@ -1,4 +1,4 @@
-import { add, reverseStr } from './utils'
+import { add, reverseStr } from '../src/utils/utils'
 
 describe('utils', () => {
   test('should add two numbers', () => {

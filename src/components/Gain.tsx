@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 interface GainProps {
   name: string
@@ -33,7 +33,7 @@ export class Gain extends Component<GainProps> {
     const { name } = this.props
     const { oldPrice, newPrice, result, isGain } = this.state
     return (
-      <div className='my-2 text-center'>
+      <div className='my-2 text-center' data-testid='gain'>
         <div className='my-1'>
           <h1>{name}</h1>
         </div>
@@ -48,6 +48,7 @@ export class Gain extends Component<GainProps> {
               placeholder='Old Price'
               className='w-full'
               pattern='\d*'
+              data-testid='oldPrice'
             />
           </div>
           <div className='w-1/3'>
@@ -60,10 +61,14 @@ export class Gain extends Component<GainProps> {
               placeholder='New Price'
               className='w-full'
               pattern='\d*'
+              data-testid='newPrice'
             />
           </div>
           <div className='flex w-1/3 items-center justify-center border-2 border-dashed border-gray-300'>
-            <p className={`${isGain ? 'text-green-500' : 'text-red-500'}`}>
+            <p
+              data-testid='result'
+              className={`${isGain ? 'text-green-500' : 'text-red-500'}`}
+            >
               {result}
             </p>
           </div>
