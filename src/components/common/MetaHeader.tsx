@@ -1,14 +1,14 @@
 import Head from 'next/head'
 
 interface MetaHeaderProps {
-  title: string
+  title?: string
 }
 
 export default function MetaHeader({ title = 'CMS BASE' }: MetaHeaderProps) {
   const theme = '#4a90e2'
   return (
     <Head>
-      <title>{title}</title>
+      <title data-testid='title'>{title}</title>
       <link rel='icon' href='/favicon.ico' />
       {/* link manifest.json  */}
       <link rel='manifest' href='/manifest.json' />

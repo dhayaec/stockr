@@ -31,7 +31,7 @@ export class PossibleGain extends Component<PossibleGainProps, any> {
     const { name } = this.props
     const { price, percentage, result } = this.state
     return (
-      <div className='my-2 text-center'>
+      <div className='my-2 text-center' data-testid='possible-gain'>
         <div className='my-1'>
           <h1>{name}</h1>
         </div>
@@ -46,6 +46,7 @@ export class PossibleGain extends Component<PossibleGainProps, any> {
               placeholder='Price'
               className='w-full'
               pattern='\d*'
+              data-testid='price'
             />
           </div>
           <div className='w-1/2'>
@@ -58,13 +59,14 @@ export class PossibleGain extends Component<PossibleGainProps, any> {
               placeholder='Percentage'
               className='w-full'
               pattern='\d*'
-              max={100}
-              maxLength={3}
+              data-testid='percentage'
             />
           </div>
         </div>
         <div className='flex justify-center py-1 text-center'>
-          <p className={'text-green-500'}>&#8377; {result}</p>
+          <p data-testid='result' className={'text-green-500'}>
+            &#8377; {result}
+          </p>
         </div>
       </div>
     )

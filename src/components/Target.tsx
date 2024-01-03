@@ -37,7 +37,7 @@ export default class Target extends Component<TargetProps, any> {
     const { price, sl, target, tp, sp } = this.state
 
     return (
-      <div className='my-2 text-center'>
+      <div className='my-2 text-center' data-testid='target'>
         <div className='my-1'>
           <h1>{name}</h1>
         </div>
@@ -52,11 +52,12 @@ export default class Target extends Component<TargetProps, any> {
               placeholder='Price'
               className='w-full'
               pattern='\d*'
+              data-testid='price'
             />
           </div>
           <div className='w-3/12'>
             <input
-              value={tp || ''}
+              value={tp}
               type='number'
               name='tp'
               id='tp'
@@ -64,11 +65,12 @@ export default class Target extends Component<TargetProps, any> {
               placeholder='Target Price'
               className='w-full'
               pattern='\d*'
+              data-testid='tp'
             />
           </div>
           <div className='w-3/12'>
             <input
-              value={sp || ''}
+              value={sp}
               type='number'
               name='sp'
               id='sp'
@@ -76,17 +78,22 @@ export default class Target extends Component<TargetProps, any> {
               placeholder='Stop Loss'
               className='w-full'
               pattern='\d*'
+              data-testid='sp'
             />
           </div>
         </div>
         <div className='flex text-center'>
           <div className='w-1/2 text-green-500'>
             <p>Target</p>
-            <p className='text-xl'>{target}</p>
+            <p data-testid='target-price' className='text-xl'>
+              {target}
+            </p>
           </div>
           <div className='w-1/2 text-red-500'>
             <p>Stop Loss</p>
-            <p className='text-xl'>{sl}</p>
+            <p data-testid='sl-price' className='text-xl'>
+              {sl}
+            </p>
           </div>
         </div>
       </div>
