@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot home renders homepage unchanged 1`] = `
+<div>
+  <div>
+    <h1
+      class="text-center"
+      data-testid="heading"
+    >
+      Stockr
+    </h1>
+    <div
+      class="px-2 text-center"
+    >
+      <div
+        class="my-2 text-center"
+      >
+        <div
+          class="my-1"
+        >
+          <h1>
+            Target / Stop Loss
+          </h1>
+        </div>
+        <div
+          class="flex text-center"
+        >
+          <div
+            class="w-6/12"
+          >
+            <input
+              class="w-full"
+              id="price"
+              name="price"
+              pattern="\\\\d*"
+              placeholder="Price"
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            class="w-3/12"
+          >
+            <input
+              class="w-full"
+              id="tp"
+              name="tp"
+              pattern="\\\\d*"
+              placeholder="Target Price"
+              type="number"
+              value="1"
+            />
+          </div>
+          <div
+            class="w-3/12"
+          >
+            <input
+              class="w-full"
+              id="sp"
+              name="sp"
+              pattern="\\\\d*"
+              placeholder="Stop Loss"
+              type="number"
+              value="0.5"
+            />
+          </div>
+        </div>
+        <div
+          class="flex text-center"
+        >
+          <div
+            class="w-1/2 text-green-500"
+          >
+            <p>
+              Target
+            </p>
+            <p
+              class="text-xl"
+            >
+              0
+            </p>
+          </div>
+          <div
+            class="w-1/2 text-red-500"
+          >
+            <p>
+              Stop Loss
+            </p>
+            <p
+              class="text-xl"
+            >
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-2 text-center"
+      >
+        <div
+          class="my-1"
+        >
+          <h1>
+            Gain / Loss
+          </h1>
+        </div>
+        <div
+          class="flex justify-center text-center"
+        >
+          <div
+            class="w-1/3"
+          >
+            <input
+              class="w-full"
+              id="oldPrice"
+              name="oldPrice"
+              pattern="\\\\d*"
+              placeholder="Old Price"
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            class="w-1/3"
+          >
+            <input
+              class="w-full"
+              id="newPrice"
+              name="newPrice"
+              pattern="\\\\d*"
+              placeholder="New Price"
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            class="flex w-1/3 items-center justify-center border-2 border-dashed border-gray-300"
+          >
+            <p
+              class="text-red-500"
+            >
+              0
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center py-1 text-center"
+        >
+          <p
+            class="text-red-500"
+          >
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        class="my-2 text-center"
+      >
+        <div
+          class="my-1"
+        >
+          <h1>
+            Day's Range
+          </h1>
+        </div>
+        <div
+          class="flex justify-center text-center"
+        >
+          <div
+            class="w-1/2"
+          >
+            <input
+              class="w-full"
+              id="range"
+              name="range"
+              pattern="\\\\d*"
+              placeholder="Range"
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            class="flex w-1/2 items-center justify-center border-2 border-dashed border-gray-300"
+          >
+            <p>
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-2 text-center"
+      >
+        <div
+          class="my-1"
+        >
+          <h1>
+            Possible Gain
+          </h1>
+        </div>
+        <div
+          class="flex justify-center text-center"
+        >
+          <div
+            class="w-1/2"
+          >
+            <input
+              class="w-full"
+              id="price"
+              name="price"
+              pattern="\\\\d*"
+              placeholder="Price"
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            class="w-1/2"
+          >
+            <input
+              class="w-full"
+              id="percentage"
+              max="100"
+              maxlength="3"
+              name="percentage"
+              pattern="\\\\d*"
+              placeholder="Percentage"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex justify-center py-1 text-center"
+        >
+          <p
+            class="text-green-500"
+          >
+            ₹ 
+            0
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
