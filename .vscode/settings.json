@@ -5,10 +5,9 @@
     "source.organizeImports": "explicit"
   },
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.exclude": {
     "**/node_modules/": true,
-    "package-lock.json": true,
+    "pnpm-yaml.json": true,
     "**/.next": true,
     "**/dist/": true,
     "next-env.d.ts": true,
@@ -40,8 +39,5 @@
     "tailwindui",
     "testid",
     "vercel"
-  ],
-  "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
-  }
+  ]
 }
